@@ -1,0 +1,19 @@
+@media screen and (max-width:720px) {
+    #skillBar>p{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+#skillBar>p{
+font-size: 3vw;
+    }
+    #skillBarImg{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    #skillText{
+        font-size: 5vw;
+      
+    }
+}
