@@ -28,7 +28,7 @@ const Client = () => {
         <img src={Icon} alt="" className="h-[130px]" />
       </div>
       <div>
-        <h2 className="mx-0 my-4  text-[2rem] font-bold">My Clients</h2>
+        <h2 className="mx-0 my-4  text-[2rem] font-bold underline ">My Clients</h2>
         <span className="text-[300] text-md font-light m-2 flex ">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nesciunt
           quo vero fugiat blanditiis <br /> aliquid corrupti necessitatibus
@@ -62,7 +62,7 @@ const Client = () => {
       <div>
         <h2
           id="contactUs"
-          className="mx-0 my-4  mt-[100px] text-[2rem] font-bold"
+          className="mx-0 my-4  mt-[100px] text-[2rem] font-bold underline "
         >
           Contact Us
         </h2>
@@ -70,67 +70,56 @@ const Client = () => {
           Don't Worry Your data is totally safe and secure for lifetime as per
           our policies..
         </span>
-        <form className="m-[1rem]  flex flex-col items-center justify-center w-[90vw] max-w-[60rem]">
+
+        
+        <form className="m-[1rem]  flex flex-col items-center justify-center w-[90vw] max-w-[60rem]" id="contactform">
           <input
             type="text"
-            className=" max-w-[40rem] bg-gray-900 w-full rounded-lg m-[0.5rem] px-[1rem] border border-yellow-200 py-[0.5rem]"
+            className=" max-w-[40rem] bg-white w-full rounded-lg m-[0.5rem] px-[1rem] border border-yellow-200 py-[0.5rem]"
             placeholder="Your Name"
+            id="name"
           />
           <input
             type="email"
-            className="max-w-[40rem]  bg-gray-900 w-full rounded-lg m-[0.5rem] border border-yellow-200 px-[1rem] py-[0.5rem]"
+            className="max-w-[40rem]  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+            invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500  bg-white w-full rounded-lg m-[0.5rem] border border-yellow-200 px-[1rem] py-[0.5rem]"
             placeholder="Your Email Address"
+            id="email"
           />
           <input
             type="number"
-            className=" max-w-[40rem] bg-gray-900 border border-yellow-200 w-full rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
+            className=" max-w-[40rem] bg-white border border-yellow-200 w-full rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
             placeholder="Your Mobile Number"
+            id="number"
           />
           <textarea
             name="message"
-            className="max-w-[40rem] bg-gray-900 w-full border border-yellow-200 rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
+            className="max-w-[40rem] bg-white w-full border border-yellow-200 rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
             rows="6"
             placeholder="Your Message"
+            id="message"
           ></textarea>
 
           <button
-            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-white text-black mt-4  hover:bg-blue-400 hover:duration-700"
+            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-blue-400 text-black mt-4  hover:bg-green-400 hover:duration-700"
             id="btn"
             value="send"
+          type="submit"
           >
             {" "}
             Submit{" "}
           </button>
           <div>
-    <button onClick={handleClick} className="h-10 mx-auto mt-5 w-[15rem] border border-yellow-300 bg-red-600 rounded-lg font-thick hover:bg-green-800 hover:duration-700">
+    <button onClick={handleClick} className="h-10 mx-auto mt-5 w-[15rem] cursor-progress border border-yellow-300 bg-blue-500 rounded-lg font-thick hover:bg-green-800 hover:duration-700">
       Download CV
     </button>
 </div>
-          <div className="flex flex-wrap ">
-            <img
-              src={FacebookIcon}
-              alt="FaceBook"
-              className="object-cover h-[3rem] w-[3rem] mx-[0.75rem] my-0 mt-4 hover:opacity-75 hover:scale-105 transition-transform duration-300"
-            />
-            <img
-              src={TwitterIcon}
-              alt="Twitter"
-              className="object-cover h-[3rem] w-[3rem] mx-[0.75rem] my-0 mt-4 hover:opacity-75 hover:scale-105 transition-transform duration-300"
-            />
-            <img
-              src={YoutubeIcon}
-              alt="Youtube"
-              className="object-cover h-[3rem] w-[3rem] mx-[0.75rem] my-0 mt-4 hover:opacity-75 hover:scale-105 transition-transform duration-300"
-            />
-            <img
-              src={InstagramIcon}
-              alt="Instagram"
-              className="object-cover h-[3rem] w-[3rem] mx-[0.75rem] my-0 mt-4 hover:opacity-75 hover:scale-105 transition-transform duration-300"
-            />
-          </div>
+        
         </form>
       </div>
     </section>
+    
   );
 };
 

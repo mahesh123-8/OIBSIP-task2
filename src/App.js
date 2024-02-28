@@ -6,6 +6,7 @@ import Client from "./components/myclient/client";
 import Footer from "./components/footer/footer";
 import Animate from "./components/midlevel";
 import './index.css'
+import Skillsss from "./components/newsec/skilllang";
 function App() {
   return (
     <div className="App">
@@ -17,9 +18,9 @@ function App() {
    
    <Poster/>
    <Animate/>
+   <Skillsss/>
+
    <Client/>
-   
-  
    <Footer/>
      </div>
   );

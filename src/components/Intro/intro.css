@@ -23,15 +23,15 @@ justify-content: center;
 
 }
 .introName{
-    color: yellow;
+    color: yellpw;
 
 }
-.introPara{
-    font-size: medium;
-    font-weight: 400;
+/* .introPara{
+    font-size: large;
+    font-weight: 300;
     letter-spacing: 1px;
 
-}
+} */
 /* .btn{
     background: white;
     margin: 1rem 0;
@@ -65,3 +65,19 @@ justify-content: center;
     }
    
 }
+ @media (max-width: 500px) {
+    .introContent {
+      position: relative;
+      background-image: url('../../assets/1.png'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      z-index: 1;
+    }
+  
+    .introContent img {
+      display: none;
+    }
+  }
+   
+  
