@@ -40,13 +40,13 @@ const Intro = () => {
    </div>
    </div>
 
-      <img
+      {/* <img
         src={bg}
         alt=""
         id="img-intro"
         className="absolute top-[-1rem] right-0 mr-[200px] flex z-[-2] h-[400px] rounded-b-full shadow-2xl shadow-black hover:opacity-75 hover:scale-105 transition-transform duration-300 "
       />
-      
+       */}
     
 
     </section>
