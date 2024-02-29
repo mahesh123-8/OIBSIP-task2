@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import Adobe from "../../assets/adobe.png";
 import FacebookIcon from "../../assets/facebook-icon.png";
 import Facebook from "../../assets/facebook.png";
@@ -8,17 +8,47 @@ import TwitterIcon from "../../assets/twitter.png";
 import Walmart from "../../assets/walmart.png";
 import YoutubeIcon from "../../assets/youtube.png";
 import Icon from "../../assets/comp.png";
-import Example from '../../assets/pdfs/Cv.PDF';
+import { data } from "autoprefixer";
+
 
 const Client = () => {
-  const anchorRef = useRef(null);
-  const handleClick = (e) => {
-    e.preventDefault();
-    const link = document.createElement('a');
-    link.href=Example;
-    link.download='Example.pdf';
-    link.click();
+const [user,setUser]= useState(
+  {
+    Name: '', Email: '',Number: '',message:''
+  } 
+)
+let name,value
+console.log(user);
+const data =(e)=>{
+  
+name =e.target.name;
+value = e.target.value;
+setUser({...user, [name]:value});
+
+}
+
+const getdata= async (e) =>{
+  const { Name, Email,Number,message} = user;
+  e.preventDefault();
+  const options={
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      Name, Email,Number,message
+    })
   }
+  const res= await fetch('https://portfolio-31fda-default-rtdb.firebaseio.com/UserData.json'
+  ,options)
+  console.log(res);
+  if(res){
+    alert("Message Sent")
+  }else{
+    alert("Error Occured")
+  }
+
+}
   return (
     <section
       id="client"
@@ -77,7 +107,10 @@ const Client = () => {
             type="text"
             className=" max-w-[40rem] bg-white w-full rounded-lg m-[0.5rem] px-[1rem] border border-yellow-200 py-[0.5rem]"
             placeholder="Your Name"
-            id="name"
+            name="Name"
+            value={user.Name}
+            required
+            onChange={data}
           />
           <input
             type="email"
@@ -85,20 +118,28 @@ const Client = () => {
             invalid:border-pink-500 invalid:text-pink-600
             focus:invalid:border-pink-500 focus:invalid:ring-pink-500  bg-white w-full rounded-lg m-[0.5rem] border border-yellow-200 px-[1rem] py-[0.5rem]"
             placeholder="Your Email Address"
-            id="email"
+            name="Email"
+            value={user.Email}
+            required
+            onChange={data}
           />
           <input
             type="number"
             className=" max-w-[40rem] bg-white border border-yellow-200 w-full rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
             placeholder="Your Mobile Number"
-            id="number"
+            name="Number"
+            value={user.Number}
+            required
+            onChange={data}
           />
           <textarea
             name="message"
             className="max-w-[40rem] bg-white w-full border border-yellow-200 rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
             rows="6"
             placeholder="Your Message"
-            id="message"
+           value={user.message}
+           required
+           onChange={data}
           ></textarea>
 
           <button
@@ -106,15 +147,12 @@ const Client = () => {
             id="btn"
             value="send"
           type="submit"
+          onClick={getdata}
           >
             {" "}
             Submit{" "}
           </button>
-          <div>
-    <button onClick={handleClick} className="h-10 mx-auto mt-5 w-[15rem] cursor-progress border border-yellow-300 bg-blue-500 rounded-lg font-thick hover:bg-green-800 hover:duration-700">
-      Download CV
-    </button>
-</div>
+         
         
         </form>
       </div>
