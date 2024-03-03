@@ -1,31 +1,61 @@
 #intro{
-    height: calc( 100vh - 4rem);
-    width: 100vw;
-    min-width: 75rem;
+    height: calc( 110vh );
+   
+width: 100vw;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 
 .introContent{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
+    padding: 4rem;
+    font-size: 2rem;
+    font-weight: 800;
 display: flex;
 flex-direction: column;
 justify-content: center;
+color: rgb(255, 255, 255);
 }
 .hello{
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 200;
 
 }
-.introName{
-    color: yellpw;
-
+@media screen and (min-width:500)  {
+  .introText{
+ 
+    font-size: large;
+    color: rgb(255, 0, 0);
+    
 }
+  
+}
+/* 
+.hero {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    margin-right: 200px;
+    display: flex;
+    z-index: -2;
+    height: 400px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .hero:hover {
+    opacity: 0.75;
+    transform: scale(1.05);
+  }
+ */
+
+
+
+
 /* .introPara{
     font-size: large;
     font-weight: 300;
@@ -46,38 +76,59 @@ justify-content: center;
     margin: 0 0.25rem;
     height: 1rem;
 } */
-@media screen  and (max-width:840px){
-    .bg{
-         right: -10vw;
-        
+@media screen and (max-width:500px) {
+    #hero{
+        opacity: 0;
     }
+}
+@media screen  and (max-width:480px){
+
     .introContent{
-        font-size: 10vw;
+        font-size: 30px;
     }
     .hello{
         font-size: 4.5vw;
     }
 }
-@media screen  and (max-width:480px){
-    .bg{
-         right: -20vw;
-        
+
+@media  screen and(max-width:480px) {
+    .introText{
+        font-size: 1px;
     }
-   
+    
 }
  @media (max-width: 500px) {
-    .introContent {
-      position: relative;
-      background-image: url('../../assets/1.png'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
-      background-size: cover;
-      background-position: center;
-      padding: 20px;
-      z-index: 1;
+    
+ }
+    /* @keyframes floatUpDown {
+        0%, 100% {
+          transform: translateY(0); 
+        }
+        50% {
+          transform: translateY(-30px); 
+        }
+      } */
+    
+      /* Create a Tailwind CSS animation utility class */
+      /* .introContent{
+        animation: floatUpDown 3s ease-in-out infinite;
+      }
+    
+  }  */
+   
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
     }
-  
-    .introContent img {
-      display: none;
+    50% {
+      transform: translateY(-30px); /* Midway point, adjust the value as needed */
     }
   }
-   
+
+  /* Create a Tailwind CSS animation utility class */
+  #hero{
+    animation: floatUpDown 3s ease-in-out infinite;
+    
+}
+
   

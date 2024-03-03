@@ -1,0 +1,14 @@
+@keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-30px); /* Midway point, adjust the value as needed */
+    }
+  }
+
+  /* Create a Tailwind CSS animation utility class */
+  #pic{
+    animation: floatUpDown 3s ease-in-out infinite;
+    
+}

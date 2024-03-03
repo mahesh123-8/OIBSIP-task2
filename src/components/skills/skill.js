@@ -10,7 +10,7 @@ const Skill = () => {
       id="skill"
       className="overflow-hidden w-screen max-w-[65rem] flex flex-col items-center justify-center text-center mx-auto my-0"
     >
-      <span className="text-[30px] font-semibold pt-11 underline">
+      <span className="text-[30px] font-semibold pt-11 underline mt-2">
         What I Do
       </span>
       <span className=" text-sm font-bold max-w-[51rem] px-8 py-0">

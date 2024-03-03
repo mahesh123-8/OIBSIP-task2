@@ -1,9 +1,8 @@
 .navbar {
-    background-color: rgb(133, 190, 255);
+    background-color: #000096;
     height: 5rem;
     width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
+    margin: 0;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -13,33 +12,29 @@
     z-index: 3;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
 }
 
 .logo {
-    object-fit: cover;
+    object-fit: fill;
     height: 3rem;
     width: 4rem;
-
 }
 
 .desktopMenuListItem {
-
     margin: 1rem;
     cursor: pointer;
-
 }
 
 .desktopMenubtn {
     background: rgb(197, 0, 0);
-    color: black;
+    color: rgb(255, 255, 255);
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
     padding: 0 1rem;
-
-
 }
 
 .desktopMenuImg {
@@ -47,20 +42,79 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
-
 }
 
 .desktopMenuListItem:hover {
-    color: yellow;
+    color: rgb(255, 255, 255);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
-
+    border-bottom: 3px solid rgb(123, 114, 114);
 }
 
 .active {
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    color: rgb(188, 188, 188);
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-@media screen and (max-width:350px) {}
+@media screen and (max-width: 350px) {
+    .navbar {
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .desktopMenuListItem {
+        margin: 0.5rem;
+        /* Adjust margin for smaller screens */
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+        /* Hide desktop menu by default on small screens */
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        /* Adjust the top position as needed */
+        left: 0;
+        width: 21rem;
+        color: bisque;
+        background-color: rgb(239, 239, 239);
+        padding: 2rem 3rem;
+        /* Adjust padding as needed */
+
+        z-index: 2;
+    }
+
+    .mobileMenu a {
+        margin: 1rem 0;
+        font-size: 1rem;
+        /* Adjust font size for mobile menu items */
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        position: sticky;
+        top: 1rem;
+        /* Adjust the top position as needed */
+        right: 1rem;
+        /* Adjust the right position as needed */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .hamburger-icon {
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+    }
+}

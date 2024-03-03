@@ -32,7 +32,7 @@ const Poster = () => {
             <img
               src={Portfolio1}
               alt=""
-              className="object-cover h-[20rem] border-8 border-black  m-[0.5rem] hover:opacity-75 hover:scale-105 transition-transform duration-300 rounded-l-full"
+              className="object-cover h-[20rem]  m-[0.5rem] hover:opacity-75 hover:scale-105 transition-transform duration-300"
             />
           </a>
         </div>
@@ -46,7 +46,7 @@ const Poster = () => {
             <img
               src={Portfolio2}
               alt=""
-              className="object-cover h-[20rem] m-[0.5rem]  border-8 border-black   rounded-r-full hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              className="object-cover h-[10rem] m-[0.5rem]      hover:opacity-75 hover:scale-105 transition-transform duration-300"
             />
           </a>
         </div>
@@ -60,7 +60,7 @@ const Poster = () => {
             <img
               src={Portfolio3}
               alt=""
-              className="object-cover h-[20rem] m-[0.5rem] rounded-md  border-8 border-black rounded-b-full  hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              className="object-cover h-[20rem]  m-[0.5rem] rounded-md  hover:opacity-75 hover:scale-105 transition-transform duration-300"
             />
           </a>
         </div>
