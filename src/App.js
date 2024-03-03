@@ -3,10 +3,10 @@ import Intro from "./components/Intro/intro";
 import Poster from "./components/works/works";
 import Client from "./components/myclient/client";
 import Footer from "./components/footer/footer";
-import Animate from "./components/midlevel";
 import './index.css'
 import Skillsss from "./components/newsec/skilllang";
 import About from "./components/services/services";
+import Gototop from "./components/gototop";
 
 function App() {
   return (
@@ -18,14 +18,14 @@ function App() {
    
    <About/>
    <Poster/>
-   <Animate/>
+   
    <Skillsss/>
   
    <Client/>
    
-   
+   <Gototop/>
    <Footer/>
-  
+
      </div>
   );
 }

@@ -1,13 +1,21 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Portfolio1 from "../../assets/hospital management.jpeg";
 import Portfolio2 from "../../assets/grocery.jpeg";
 import Portfolio3 from "../../assets/ecommer.jpeg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Poster = () => {
+  useEffect(() => {
+    AOS.init({
+      offset:200,
+      duration: 300,
+    });
+  }, [
+  ]);
   return (
     <section
       id="works"
-      className="min-h-[calc(100vh-4rem)] w-full max-w-[60rem] flex flex-col items-center mt-2 mx-auto my-0 text-center px-4 py-[1rem] justify-center"
+      className="min-h-[calc(100vh-4rem)] w-full max-w-[60rem] flex flex-wrap items-center mt-2 mx-auto my-0 text-center px-4 py-[1rem] justify-center"
     >
       <h2 className="mx-0 my-4  text-[3rem] font-bold underline">
         My Portfolio
@@ -20,7 +28,7 @@ const Poster = () => {
       </span>
 
       <div
-        className="flex justify-center items-center w-full rounded-lg shadow-blue-900 shadow-lg mt-4 max-w-[65rem] flex-wrap"
+        className="flex  justify-center items-center w-[60rem] rounded-lg shadow-blue-900 shadow-lg mt-4 max-w-[65rem] flex-wrap"
         id="workImg"
       >
         <div className="relative flex items-center justify-center">
@@ -32,7 +40,8 @@ const Poster = () => {
             <img
               src={Portfolio1}
               alt=""
-              className="object-cover h-[20rem]  m-[0.5rem] hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              className="object-cover h-[9rem] w-[15rem] m-[0.5rem]  hover:opacity-75 hover:scale-105 transition-transform duration-300 rounded-md"
+              data-aos="fade-left"
             />
           </a>
         </div>
@@ -46,8 +55,9 @@ const Poster = () => {
             <img
               src={Portfolio2}
               alt=""
-              className="object-cover h-[10rem] m-[0.5rem]      hover:opacity-75 hover:scale-105 transition-transform duration-300"
-            />
+              className="object-cover h-[9rem] w-[15rem] m-[0.5rem]   rounded-md   hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              data-aos="fade-left"
+           />
           </a>
         </div>
 
@@ -60,7 +70,8 @@ const Poster = () => {
             <img
               src={Portfolio3}
               alt=""
-              className="object-cover h-[20rem]  m-[0.5rem] rounded-md  hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              className="object-cover h-[9rem] w-[15rem]  m-[0.5rem] rounded-md  hover:opacity-75 hover:scale-105 transition-transform duration-300"
+              data-aos="fade-left"
             />
           </a>
         </div>

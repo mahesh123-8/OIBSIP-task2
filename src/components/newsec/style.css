@@ -1,7 +1,15 @@
-@media screen and (max-width:500px) {
-    #new{
+@media screen and (max-width:800px) {
+    #new {
         width: 300px;
-        
+
     }
-   
+
 }
+
+/* @media screen and (max-width:800px) {
+    #new {
+        width: 600px;
+
+    }
+
+} */

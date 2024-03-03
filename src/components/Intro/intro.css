@@ -1,5 +1,5 @@
 #intro{
-    height: calc( 110vh );
+    height: calc( 140vh );
    
 width: 100vw;
     margin: 0 auto;
@@ -18,18 +18,16 @@ flex-direction: column;
 justify-content: center;
 color: rgb(255, 255, 255);
 }
-.hello{
-    font-size: 2rem;
-    font-weight: 200;
 
-}
-@media screen and (min-width:500)  {
+
+@media screen and (max-width:500)  {
   .introText{
  
-    font-size: large;
-    color: rgb(255, 0, 0);
+    font-size: 4rem;
+   font-weight: 600px;
     
 }
+
   
 }
 /* 
@@ -126,7 +124,7 @@ color: rgb(255, 255, 255);
   }
 
   /* Create a Tailwind CSS animation utility class */
-  #hero{
+  #hero3{
     animation: floatUpDown 3s ease-in-out infinite;
     
 }

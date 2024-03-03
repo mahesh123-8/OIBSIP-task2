@@ -1,22 +1,29 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+import React ,{useEffect} from "react";
 import tailwind from "../../assets/Tailwind CSS.png";
 import css from "../../assets/css-3.png";
 import html from "../../assets/html-5.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import './style.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Skillsss = () => {
+  useEffect(() => {
+    AOS.init({
+      offset:200,
+      duration: 300,
+    });
+  }, [
+  ]);
  
   return (
-    <section className="w-full mx-auto">
+    <section className="w-full mx-auto ">
       <h1 className="text-4xl font-bold text-center underline ">
         My Skills
       </h1>
       <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-[900px] mt-8 " id="new">
-    <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" >
+    <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right" >
       <img src={html} alt="Round Image 1" className="w-24 h-24 mt-4 rounded-md" />
       <p className="mt-4 text-sm text-center text-white">
             HTML5 is the latest version of the HyperText Markup Language,
@@ -27,7 +34,7 @@ const Skillsss = () => {
           <button className="h-[40px] mt-[70px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
         </div>
 
-        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105">          <img
+        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right">          <img
             src={css}
             alt="Round Image 2"
             className="w-24 h-24 mt-4 rounded-md"
@@ -42,7 +49,7 @@ const Skillsss = () => {
 
         </div>
 
-        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105">          <img
+        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right">          <img
             src={js}
             alt="Round Image 3"
             className="w-24 h-24 mt-4 rounded-md"
@@ -58,7 +65,7 @@ const Skillsss = () => {
 
         </div>
 
-        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105"> 
+        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right"> 
                  <img
             src={tailwind}
             alt="Round Image 3"
@@ -73,7 +80,7 @@ const Skillsss = () => {
           <button className="h-[40px] mt-[40px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
 
         </div>
-        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105"> 
+        <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right"> 
                  <img
             src={react}
             alt="Round Image 3"

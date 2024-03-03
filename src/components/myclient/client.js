@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Adobe from "../../assets/adobe.png";
 import FacebookIcon from "../../assets/facebook-icon.png";
 import Facebook from "../../assets/facebook.png";
@@ -9,9 +9,22 @@ import Walmart from "../../assets/walmart.png";
 import YoutubeIcon from "../../assets/youtube.png";
 import Icon from "../../assets/comp.png";
 import { data } from "autoprefixer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Client = () => {
+
+  useEffect(()=>{
+   AOS.init({
+    offset:200,
+    duration: 300,
+   });
+  },[
+    ]);
+   
+
+
+  
 const [user,setUser]= useState(
   {
     Name: '', Email: '',Number: '',message:''
@@ -55,11 +68,11 @@ const getdata= async (e) =>{
       className="min-h-[calc(100vh-4rem)]   w-full max-w-[60rem] flex flex-col items-center mt-1 mx-auto my-0 text-center px-4 py-[1rem] justify-center"
     >
       <div>
-        <img src={Icon} alt="" className="h-[130px]" />
+        <img src={Icon} alt="" className="h-[130px]" data-aos="fade-down"/>
       </div>
       <div>
-        <h2 className="mx-0 my-4  text-[2rem] font-bold underline ">My Clients</h2>
-        <span className="text-[300] text-md font-light m-2 flex ">
+        <h2 className="mx-0 my-4  text-[2rem] font-bold underline " data-aos="fade-down">My Clients</h2>
+        <span className="text-[300] text-md font-light m-2 flex " data-aos="fade-down">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nesciunt
           quo vero fugiat blanditiis <br /> aliquid corrupti necessitatibus
           nulla. Quia sed aspernatur modi error repellendus libero excepturi
@@ -70,21 +83,25 @@ const getdata= async (e) =>{
             src={Walmart}
             alt=""
             className="transition-transform duration-300 shadow-md clientimg shadow-yellow-300 hover:opacity-75 hover:scale-105"
-          />
+            data-aos="fade-down"
+         />
           <img
             src={Adobe}
             alt=""
             className="transition-transform duration-300 shadow-md clientimg shadow-yellow-300 hover:opacity-75 hover:scale-105"
+            data-aos="fade-down"
           />
           <img
             src={Microsoft}
             alt=""
             className="transition-transform duration-300 shadow-md clientimg shadow-yellow-300 hover:opacity-75 hover:scale-105"
-          />
+            data-aos="fade-down"
+         />
           <img
             src={Facebook}
             alt=""
             className="transition-transform duration-300 shadow-md clientimg shadow-yellow-300 hover:opacity-75 hover:scale-105"
+            data-aos="fade-down"
           />
         </div>
       </div>
@@ -93,16 +110,17 @@ const getdata= async (e) =>{
         <h2
           id="contactUs"
           className="mx-0 my-4  mt-[100px] text-[2rem] font-bold underline "
-        >
+          data-aos="fade-down"
+       >
           Contact Us
         </h2>
-        <span className="text-[300] text-md font-light m-2 flex text-center items-center justify-center ">
+        <span className="text-[300] text-md font-light m-2 flex text-center items-center justify-center "  data-aos="fade-down">
           Don't Worry Your data is totally safe and secure for lifetime as per
           our policies..
         </span>
 
         
-        <form className="m-[1rem]  flex flex-col items-center justify-center w-[90vw] max-w-[60rem]" id="contactform">
+        <form className="m-[1rem]  flex flex-col items-center justify-center w-[90vw] max-w-[60rem]" id="contactform"  data-aos="fade-down">
           <input
             type="text"
             className=" max-w-[40rem] bg-white w-full rounded-lg m-[0.5rem] px-[1rem] border border-yellow-200 py-[0.5rem]"
@@ -111,6 +129,7 @@ const getdata= async (e) =>{
             value={user.Name}
             required
             onChange={data}
+           
           />
           <input
             type="email"

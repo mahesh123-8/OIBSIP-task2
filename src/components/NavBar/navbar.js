@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import logo from '../../assets/portfolio.png';
+import logo from '../../assets/images (4).png';
 import contactImg from '../../assets/contact.png';
 import { Link } from 'react-scroll';
 import { MdMenu, MdClose } from 'react-icons/md';
@@ -26,8 +26,9 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className={`desktopMenu ${isMenuOpen ? 'hidden md:flex' : ''}`}>
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('intro')}>Home</Link>
+        <Link activeClass='active' to='Aboutus' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('Aboutus')}>About</Link>
+
         <Link activeClass='active' to='client' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('client')}>Clients</Link>
-        <Link activeClass='active' to='skill' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('skill')}>About</Link>
         <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('works')}>Portfolio</Link>
       </div>
 
