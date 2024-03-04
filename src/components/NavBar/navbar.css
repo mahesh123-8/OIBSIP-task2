@@ -23,6 +23,10 @@
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
+    font-size: 23px;
+    font-weight: 800;
+   
+   
 }
 
 .desktopMenubtn {
@@ -86,13 +90,14 @@
         justify-content: center;
         /* Adjust the top position as needed */
         left: 0;
-        width: 21rem;
+        width: 23rem;
+        height: 30rem;
         color: #ffffff;
         background-color: #000096;
         padding: 2rem 3rem;
-        border-radius: 30px;
+        border-radius: ;
         /* Adjust padding as needed */
-
+font-size: 2rem;
         z-index: 2;
     }
 
@@ -111,7 +116,7 @@
         top: 1rem;
         /* Adjust the top position as needed */
         right: 1rem;
-        /* Adjust the right position as needed */
+        
         background: transparent;
         border: none;
         cursor: pointer;

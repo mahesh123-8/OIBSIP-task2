@@ -162,7 +162,7 @@ const getdata= async (e) =>{
           ></textarea>
 
           <button
-            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-blue-400 mt-4  hover:bg-green-400 hover:duration-700"
+            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-gray-400 mt-4  hover:bg-green-300 hover:duration-700"
             id="btn"
             value="send"
           type="submit"

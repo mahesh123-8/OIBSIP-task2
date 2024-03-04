@@ -20,15 +20,15 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-    <a href="#" className="mr-4 text-2xl font-extrabold text-green-300 portfolio-text" >Portfolio</a>
+    <a href="#" className="mr-4 text-4xl font-extrabold text-green-300 portfolio-text" >Portfolio</a>
 
       {/* Desktop Menu */}
       <div className={`desktopMenu ${isMenuOpen ? 'hidden md:flex' : ''}`}>
         <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('intro')}>Home</Link>
         <Link activeClass='active' to='Aboutus' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('Aboutus')}>About</Link>
+        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('works')}>Portfolio</Link>
 
         <Link activeClass='active' to='client' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('client')}>Clients</Link>
-        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={() => handleMenuClick('works')}>Portfolio</Link>
       </div>
 
       {/* Hamburger for mobile */}

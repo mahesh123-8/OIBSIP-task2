@@ -19,7 +19,7 @@ const Aboutnew = () => {
         <img
           src={About}
           alt="About Me"
-          className="w-[400px] h-[400px]"
+          className="w-[400px] h-[400px] "
           id="pic"
           data-aos="fade-left"
         />
@@ -27,7 +27,7 @@ const Aboutnew = () => {
 
       <div className="p-8 text-center lg:w-1/2 lg:text-left">
         <h2
-          className="mt-3 mb-8 text-4xl font-bold text-green-300 lg:text-4xl"
+          className="mt-3 mb-8 text-4xl font-bold text-green-300 underline lg:text-4xl"
           data-aos="fade-up"
         >
           About Me

@@ -88,7 +88,6 @@ const Skillsss = () => {
             src={react}
             alt="Round Image 3"
             className="w-24 h-24 mt-4 rounded-md "
-            data-aos="fade-right"
           />
           <p className="mt-4 text-sm text-center text-white">
             React is a JavaScript library for building user interfaces,
