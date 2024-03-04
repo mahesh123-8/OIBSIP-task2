@@ -19,25 +19,26 @@ const Skillsss = () => {
  
   return (
     <section className="w-full mx-auto ">
-      <h1 className="text-4xl font-bold text-center underline ">
+      <h1 className="text-4xl font-extrabold text-center text-green-300 underline " data-aos="fade-right">
         My Skills
       </h1>
       <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-[900px] mt-8 " id="new">
     <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right" >
-      <img src={html} alt="Round Image 1" className="w-24 h-24 mt-4 rounded-md" />
-      <p className="mt-4 text-sm text-center text-white">
+      <img src={html} alt="Round Image 1" className="w-24 h-24 mt-4 rounded-md" data-aos="fade-right"/>
+      <p className="mt-4 text-sm text-center text-white ">
             HTML5 is the latest version of the HyperText Markup Language,
             introducing semantic  elements, multimedia support. It
             facilitates the development of modern, responsive web applications
             with improved offline capabilities.
           </p>
-          <button className="h-[40px] mt-[70px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[70px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm  hover:bg-blue-800 hover:duration-700" type="btn" id="btn1">Read More..</button>
         </div>
 
         <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right">          <img
             src={css}
             alt="Round Image 2"
             className="w-24 h-24 mt-4 rounded-md"
+            data-aos="fade-right"
           />
           <p className="mt-4 text-sm text-center text-white ">
             CSS3, or Cascading Style Sheets level 3, is the latest iteration of
@@ -45,7 +46,7 @@ const Skillsss = () => {
             styling features such as transitions, animations,  gradients,
             shadows, and flexible box  and grid layout systems.
           </p>
-          <button className="h-[40px] mt-[50px]  font-bold  mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[50px]  font-bold  mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700" type="btn" id="btn1">Read More..</button>
 
         </div>
 
@@ -53,6 +54,7 @@ const Skillsss = () => {
             src={js}
             alt="Round Image 3"
             className="w-24 h-24 mt-4 rounded-md"
+            data-aos="fade-right"
           />
           <p className="mt-4 text-sm text-center text-white">
             JavaScript is a versatile, high-level programming language primarily
@@ -61,7 +63,7 @@ const Skillsss = () => {
             <br />
             in browsers.
           </p>
-          <button className="h-[40px] mt-[50px]   font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[50px]   font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700" type="btn" id="btn1">Read More..</button>
 
         </div>
 
@@ -70,6 +72,7 @@ const Skillsss = () => {
             src={tailwind}
             alt="Round Image 3"
             className="w-24 h-24 mt-4 rounded-md"
+            data-aos="fade-right"
           />
           <p className="mt-4 text-sm text-center text-white ">
             it is a utility-first CSS framework that simplifies and speeds up
@@ -77,7 +80,7 @@ const Skillsss = () => {
             pre-defined utility classes. Tailwind allows for rapid development <br />
             with a highly customizable.
           </p>
-          <button className="h-[40px] mt-[40px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[40px]  font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700" type="btn" id="btn1">Read More..</button>
 
         </div>
         <div className="flex flex-col items-center my-2 font-bold transition-transform duration-300 bg-blue-900 rounded-md shadow-lg hover:opacity-75 hover:scale-105" data-aos="fade-right"> 
@@ -85,6 +88,7 @@ const Skillsss = () => {
             src={react}
             alt="Round Image 3"
             className="w-24 h-24 mt-4 rounded-md "
+            data-aos="fade-right"
           />
           <p className="mt-4 text-sm text-center text-white">
             React is a JavaScript library for building user interfaces,
@@ -92,7 +96,7 @@ const Skillsss = () => {
             and efficient UI components through a declarative and <br />{" "}
             component-based approach.
           </p>
-          <button className="h-[40px] mt-[40px] font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm " type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[40px] font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700 " type="btn" id="btn1">Read More..</button>
 
         </div>
         </div>

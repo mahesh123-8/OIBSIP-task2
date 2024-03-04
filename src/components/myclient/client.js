@@ -71,7 +71,7 @@ const getdata= async (e) =>{
         <img src={Icon} alt="" className="h-[130px]" data-aos="fade-down"/>
       </div>
       <div>
-        <h2 className="mx-0 my-4  text-[2rem] font-bold underline " data-aos="fade-down">My Clients</h2>
+        <h2 className="mx-0 my-4  text-[2rem] font-bold underline text-green-300 " data-aos="fade-down">My Clients</h2>
         <span className="text-[300] text-md font-light m-2 flex " data-aos="fade-down">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nesciunt
           quo vero fugiat blanditiis <br /> aliquid corrupti necessitatibus
@@ -109,21 +109,21 @@ const getdata= async (e) =>{
       <div>
         <h2
           id="contactUs"
-          className="mx-0 my-4  mt-[100px] text-[2rem] font-bold underline "
+          className="mx-0 my-4  mt-[100px] text-[2rem] font-bold underline  text-green-300"
           data-aos="fade-down"
        >
-          Contact Us
+          Contact Me
         </h2>
-        <span className="text-[300] text-md font-light m-2 flex text-center items-center justify-center "  data-aos="fade-down">
+        {/* <span className="text-[300] text-md font-light m-2 flex text-center items-center justify-center "  data-aos="fade-down">
           Don't Worry Your data is totally safe and secure for lifetime as per
           our policies..
-        </span>
+        </span> */}
 
         
         <form className="m-[1rem]  flex flex-col items-center justify-center w-[90vw] max-w-[60rem]" id="contactform"  data-aos="fade-down">
           <input
             type="text"
-            className=" max-w-[40rem] bg-white w-full rounded-lg m-[0.5rem] px-[1rem] border border-yellow-200 py-[0.5rem]"
+            className=" max-w-[40rem] bg-white w-full rounded-lg m-[0.5rem] text-black px-[1rem] border border-yellow-200 py-[0.5rem]"
             placeholder="Your Name"
             name="Name"
             value={user.Name}
@@ -133,9 +133,9 @@ const getdata= async (e) =>{
           />
           <input
             type="email"
-            className="max-w-[40rem]  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+            className="max-w-[40rem]  disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none bg-white 
             invalid:border-pink-500 invalid:text-pink-600
-            focus:invalid:border-pink-500 focus:invalid:ring-pink-500  bg-white w-full rounded-lg m-[0.5rem] border border-yellow-200 px-[1rem] py-[0.5rem]"
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 text-black  bg-whie w-full rounded-lg m-[0.5rem] border border-yellow-200 px-[1rem] py-[0.5rem]"
             placeholder="Your Email Address"
             name="Email"
             value={user.Email}
@@ -144,7 +144,7 @@ const getdata= async (e) =>{
           />
           <input
             type="number"
-            className=" max-w-[40rem] bg-white border border-yellow-200 w-full rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
+            className=" max-w-[40rem] bg-white text-black border border-yellow-200 bg-white w-full rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem] text-black"
             placeholder="Your Mobile Number"
             name="Number"
             value={user.Number}
@@ -153,7 +153,7 @@ const getdata= async (e) =>{
           />
           <textarea
             name="message"
-            className="max-w-[40rem] bg-white w-full border border-yellow-200 rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
+            className="max-w-[40rem] bg-white w-full border text-black border-yellow-200 rounded-lg m-[0.5rem] px-[1rem] py-[0.5rem]"
             rows="6"
             placeholder="Your Message"
            value={user.message}
@@ -162,7 +162,7 @@ const getdata= async (e) =>{
           ></textarea>
 
           <button
-            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-blue-400 text-black mt-4  hover:bg-green-400 hover:duration-700"
+            className="px-[2rem] mx-auto py-[0.5rem] font-semibold border-none rounded-full bg-blue-400 mt-4  hover:bg-green-400 hover:duration-700"
             id="btn"
             value="send"
           type="submit"

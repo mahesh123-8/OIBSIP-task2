@@ -1,5 +1,5 @@
 #intro{
-    height: calc( 140vh );
+    height: calc( 120vh );
    
 width: 100vw;
     margin: 0 auto;
@@ -128,5 +128,49 @@ color: rgb(255, 255, 255);
     animation: floatUpDown 3s ease-in-out infinite;
     
 }
+@media screen and(max-width:800) {
+  .repeat{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
 
-  
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}

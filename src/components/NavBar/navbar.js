@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import logo from '../../assets/images (4).png';
-import contactImg from '../../assets/contact.png';
+
 import { Link } from 'react-scroll';
 import { MdMenu, MdClose } from 'react-icons/md';
 
@@ -21,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-      <img src={logo} alt="logo" className='logo' />
+    <a href="#" className="mr-4 text-2xl font-extrabold text-green-300 portfolio-text" >Portfolio</a>
 
       {/* Desktop Menu */}
       <div className={`desktopMenu ${isMenuOpen ? 'hidden md:flex' : ''}`}>
