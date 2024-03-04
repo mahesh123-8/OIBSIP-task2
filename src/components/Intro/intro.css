@@ -1,35 +1,35 @@
-#intro{
-    height: calc( 120vh );
-   
-width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+#intro {
+  height: auto;
+  width: 100vw;
+  margin: 0 0;
+  overflow: hidden;
+  position: relative;
 }
 
-.introContent{
-    height: 120vh;
-    width: 100vw;
-    padding: 4rem;
-    font-size: 2rem;
-    font-weight: 800;
-display: flex;
-flex-direction: column;
-justify-content: center;
-color: rgb(255, 255, 255);
+.introContent {
+  height: auto;
+  width: auto;
+  padding: 4rem;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
 }
 
 
-@media screen and (max-width:500)  {
-  .introText{
- 
+@media screen and (max-width:500) {
+  .introText {
+
     font-size: 4rem;
-   font-weight: 600px;
-    
+    font-weight: 600px;
+
+  }
+
+
 }
 
-  
-}
 /* 
 .hero {
     position: absolute;
@@ -75,30 +75,32 @@ color: rgb(255, 255, 255);
     height: 1rem;
 } */
 @media screen and (max-width:500px) {
-    #hero{
-        opacity: 0;
-    }
-}
-@media screen  and (max-width:480px){
-
-    .introContent{
-        font-size: 30px;
-    }
-    .hello{
-        font-size: 4.5vw;
-    }
+  #hero {
+    opacity: 0;
+  }
 }
 
-@media  screen and(max-width:480px) {
-    .introText{
-        font-size: 1px;
-    }
-    
+@media screen and (max-width:480px) {
+
+  .introContent {
+    font-size: 30px;
+  }
+
+  .hello {
+    font-size: 4.5vw;
+  }
 }
- @media (max-width: 500px) {
-    
- }
-    /* @keyframes floatUpDown {
+
+@media screen and(max-width:480px) {
+  .introText {
+    font-size: 1px;
+  }
+
+}
+
+@media (max-width: 500px) {}
+
+/* @keyframes floatUpDown {
         0%, 100% {
           transform: translateY(0); 
         }
@@ -106,36 +108,43 @@ color: rgb(255, 255, 255);
           transform: translateY(-30px); 
         }
       } */
-    
-      /* Create a Tailwind CSS animation utility class */
-      /* .introContent{
+
+/* Create a Tailwind CSS animation utility class */
+/* .introContent{
         animation: floatUpDown 3s ease-in-out infinite;
       }
     
   }  */
-   
-  @keyframes floatUpDown {
-    0%, 100% {
-      transform: translateY(0); /* Start and end position */
-    }
-    50% {
-      transform: translateY(-30px); /* Midway point, adjust the value as needed */
-    }
+
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Start and end position */
   }
 
-  /* Create a Tailwind CSS animation utility class */
-  #hero3{
-    animation: floatUpDown 3s ease-in-out infinite;
-    
+  50% {
+    transform: translateY(-30px);
+    /* Midway point, adjust the value as needed */
+  }
 }
+
+/* Create a Tailwind CSS animation utility class */
+#hero3 {
+  animation: floatUpDown 3s ease-in-out infinite;
+
+}
+
 @media screen and(max-width:800) {
-  .repeat{
+  .repeat {
     text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
 }
+
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -161,6 +170,7 @@ color: rgb(255, 255, 255);
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -170,7 +180,35 @@ color: rgb(255, 255, 255);
   from {
     width: 5px;
   }
+
   to {
     width: 0;
   }
 }
+.responsive-paragraph {
+  font-size: 16px; /* Adjust the font size as needed */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Add media queries for responsive design */
+@media only screen and (min-width: 375px) {
+  .responsive-paragraph {
+    font-size: 18px;
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  .responsive-paragraph {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .responsive-paragraph {
+    font-size: 20px;
+  }
+}
+
+/* Add more media queries as needed for larger screens */

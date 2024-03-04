@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full p-4 text-center bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
-        © 2023 Copyright:
+        © 2023 Copyright:Createdbymahesh
         
       </div>
     </footer>

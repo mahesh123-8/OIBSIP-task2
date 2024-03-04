@@ -14,19 +14,19 @@ const Poster = () => {
   return (
     <section
       id="works"
-      className="min-h-[calc(100vh-4rem)] w-full max-w-[60rem] flex flex-wrap items-center mt-2 mx-auto my-0 text-center px-4 py-[1rem] justify-center"
+      className="h-auto w-full max-w-[80rem] flex flex-wrap items-center mt-2 mx-auto my-0 text-center px-4 py-[1rem] justify-center bg-blue-900"
     >
-      <h2 className="mx-0 my-4  text-[3rem] font-bold underline text-green-300" data-aos="fade-down">
+      <h2 className="mx-0 my-4  text-[2rem] font-extrabold underline text-green-300" data-aos="fade-down">
         My Work
       </h2>
-      <span className="text-[300] text-lg text-bold font-light m-2 flex text-balance  hover:text-balance ">
+      <span className="text-[300] text-lg font-bold  m-2 flex text-balance  hover:text-balance ">
         Developed innovative web solutions with a focus on user experience and
         responsive design. 💻 Leveraged HTML5, CSS3, and JavaScript to craft
         engaging interfaces.
       </span>
 
       <div
-        className="flex  justify-center items-center w-[60rem] rounded-lg shadow-blue-900 shadow-lg mt-4 max-w-[65rem] flex-wrap"
+        className="flex  justify-center items-center w-[60rem] rounded-lg bg-blue-950 shadow-blue-900 shadow-lg mt-4 max-w-[65rem] flex-wrap"
         id="workImg"
       >
         <div className="relative flex items-center justify-center">
@@ -74,7 +74,7 @@ const Poster = () => {
           </a>
         </div>
       </div>
-
+{/* 
       <button
         className="px-[2rem] py-[0.5rem] font-semibold border-none rounded-md    bg-blue-300 text-black mt-4 hover:bg-blue-700 hover:duration-700"
         id="btn"
@@ -82,7 +82,7 @@ const Poster = () => {
       >
         {" "}
         See More..{" "}
-      </button>
+      </button> */}
     </section>
   );
 };

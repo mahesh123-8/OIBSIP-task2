@@ -23,10 +23,8 @@
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 800;
-   
-   
 }
 
 .desktopMenubtn {
@@ -65,21 +63,21 @@
 @media screen and (max-width: 350px) {
     .navbar {
         padding: 1rem;
-        /* Adjust padding for smaller screens */
+
     }
 
     .desktopMenuListItem {
         margin: 0.5rem;
-     
+
         font-size: 2rem;
-        
+
     }
 }
 
 @media screen and (max-width: 768px) {
     .desktopMenu {
         display: none;
-        /* Hide desktop menu by default on small screens */
+
     }
 
     .mobileMenu {
@@ -88,7 +86,7 @@
         position: fixed;
         top: 5rem;
         justify-content: center;
-        /* Adjust the top position as needed */
+
         left: 0;
         width: 23rem;
         height: 30rem;
@@ -96,8 +94,8 @@
         background-color: #000096;
         padding: 2rem 3rem;
         border-radius: ;
-        /* Adjust padding as needed */
-font-size: 2rem;
+
+        font-size: 2rem;
         z-index: 2;
     }
 
@@ -116,7 +114,7 @@ font-size: 2rem;
         top: 1rem;
         /* Adjust the top position as needed */
         right: 1rem;
-        
+
         background: transparent;
         border: none;
         cursor: pointer;
