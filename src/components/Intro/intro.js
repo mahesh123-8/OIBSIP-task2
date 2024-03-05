@@ -2,11 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useRef } from "react";
 import bg from "../../assets/character1.png";
-import Example from "../../assets/pdfs/mycv.PDF";
+import Example from "../../assets/pdfs/mycv.pdf";
 import "./intro.css";
-import git from "../../assets/git.png";
-import insta from "../../assets/insta.png";
-import email from "../../assets/email.png";
 const Intro = () => {
   const anchorRef = useRef(null);
   const handleClick = (e) => {
@@ -41,19 +38,18 @@ const Intro = () => {
           I'm Mahesh
         </span>{" "}
         <span className="flex  text-center justify-center lg:justify-start text-3xl font-extrabold  text-green-300  lg:text-5xl md:ml-[0] lg:ml-[0]">
-         Frontend Developer
+          Frontend Developer
         </span>
-        
         <div className="mt-[-20px] lg:mt-[0] md:mt-[0]">
-        <p className=" text-lg font-bold p-[3rem]  lg:p-[0] ">
-      BCA graduate from Silver Oak  University with
-      a CGPA of 8.80. Passionate about web development, I have honed my skills in
-      HTML, CSS, JavaScript, Tailwind, and React. My commitment to continuous
-      learning drives me to stay updated with industry trends, ensuring I
-      deliver high-quality solutions. Excited to contribute my expertise to
-      dynamic projects and  collaborate with like-minded professionals.
-    </p>
-    {/* <p className="text-lg text-white lg:text-2xl " data-aos="fade-down">
+          <p className=" text-lg font-bold p-[3rem]  lg:p-[0] ">
+            BCA graduate from Silver Oak University with a CGPA of 8.80.
+            Passionate about web development, I have honed my skills in HTML,
+            CSS, JavaScript, Tailwind, and React. My commitment to continuous
+            learning drives me to stay updated with industry trends, ensuring I
+            deliver high-quality solutions. Excited to contribute my expertise
+            to dynamic projects and collaborate with like-minded professionals.
+          </p>
+          {/* <p className="text-lg text-white lg:text-2xl " data-aos="fade-down">
           My proficiency in HTML, CSS, and JavaScript forms the cornerstone of
           my technical skill set, while my hands-on experience with Tailwind and
           React reflects my commitment to embracing modern web development
@@ -64,7 +60,7 @@ const Intro = () => {
           projects or contributing to group efforts, I thrive on communication
           and teamwork, valuing diverse perspectives that foster innovation.
         </p> */}
-    </div>
+        </div>
         <div className="w-[400px] flex flex-row">
           <button
             onClick={handleClick}

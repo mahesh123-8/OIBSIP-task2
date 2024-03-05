@@ -63,7 +63,7 @@ const Skillsss = () => {
             <br />
             in browsers.
           </p>
-          <button className="h-[40px] mt-[70px]   font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700" type="btn" id="btn1">Read More..</button>
+          <button className="h-[40px] mt-[70px]   font-bold mb-3 text-black bg-white rounded-md w-[120px] text-sm hover:bg-blue-800 hover:duration-700" type="btn" id="btn1" >Read More..</button>
 
         </div>
 
